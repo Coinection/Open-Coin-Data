@@ -1,2 +1,3 @@
-# Data
-Report data issues for Coinection.
+# Open Coin Data
+
+Open Coin Data is an initiative of Coinection
