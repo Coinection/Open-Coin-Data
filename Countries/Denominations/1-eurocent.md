@@ -1,6 +1,6 @@
 ---
 type: denomination
-id: 
+id: cm0bgsish0007sgbdp7ui3a6k
 ---
 
 # 1 eurocent

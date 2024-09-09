@@ -1,6 +1,6 @@
 ---
 type: denomination
-id: 
+id: cm0e8utkv000008l62zoh8me2
 ---
 
 # 2 eurocent
