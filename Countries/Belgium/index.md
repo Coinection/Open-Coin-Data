@@ -1,6 +1,6 @@
 ---
 type: country
-id: cm0f8dp820000bf1hwikdzxzv
+id: cm0f8dpez0002bf1hsxxcvzss
 ---
 
 # Belgium
