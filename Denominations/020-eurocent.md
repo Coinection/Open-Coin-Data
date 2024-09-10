@@ -1,6 +1,6 @@
 ---
 type: denomination
-id: 
+id: cm0bgrhlb0005sgbdxgbmfrhv
 ---
 
 # 20 eurocent

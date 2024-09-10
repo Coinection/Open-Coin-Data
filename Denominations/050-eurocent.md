@@ -1,6 +1,6 @@
 ---
 type: denomination
-id: 
+id: cm0e8wcrd000608l6d1291j8j
 ---
 
 # 50 eurocent

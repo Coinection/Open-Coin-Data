@@ -1,6 +1,6 @@
 ---
 type: denomination
-id: 
+id: cm0e8yuci000808l66pdo498d
 ---
 
 # 2 euro
