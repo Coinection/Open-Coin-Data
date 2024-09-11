@@ -1,7 +1,7 @@
----
+--
 type: country
-id: cm0bgnuuu0000sgbddibk5oae
----
+id: DE
+--
 
 # Germany
 
@@ -15,4 +15,3 @@ Germany is a country in central Europe. The country has the largest population o
 
 ## Images
 
-![Flag](https://res.cloudinary.com/coinection/image/upload/v1582141076/images/flags/germany_pyqevt.png)

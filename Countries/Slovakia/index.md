@@ -1,7 +1,7 @@
----
+--
 type: country
-id: cm0f87xzo000p0cjwdc9kgyol
----
+id: SK
+--
 
 # Slovakia
 
@@ -15,4 +15,3 @@ Slovakia is a republic in central Europe. The country has a predominantly mounta
 
 ## Images
 
-![Flag](https://res.cloudinary.com/coinection/image/upload/v1582141077/images/flags/slovakia_xremrn.png)

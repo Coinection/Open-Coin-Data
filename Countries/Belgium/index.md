@@ -1,7 +1,7 @@
----
+--
 type: country
-id: cm0f8dpez0002bf1hsxxcvzss
----
+id: BE
+--
 
 # Belgium
 
@@ -15,4 +15,3 @@ Belgium is a kingdom located in western Europe on the North Sea. The country bor
 
 ## Images
 
-![Flag](https://res.cloudinary.com/coinection/image/upload/v1582141075/images/flags/belgium_onphkj.png)

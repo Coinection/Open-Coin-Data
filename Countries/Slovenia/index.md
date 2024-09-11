@@ -1,7 +1,7 @@
----
+--
 type: country
-id: cm0f87xzo000o0cjwevtvgho8
----
+id: SI
+--
 
 # Slovenia
 
@@ -15,4 +15,3 @@ Slovenia is a country in central Europe on the southern edge of the Alps. The co
 
 ## Images
 
-![Flag](https://res.cloudinary.com/coinection/image/upload/v1582141077/images/flags/slovenia_zz9ywy.png)

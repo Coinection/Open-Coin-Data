@@ -1,7 +1,7 @@
----
+--
 type: country
-id: cm0f87xzo000m0cjw5q7lgjo0
----
+id: NL
+--
 
 # Netherlands
 
@@ -15,4 +15,3 @@ The Netherlands is a country in northwestern Europe, bordering Germany and Belgi
 
 ## Images
 
-![Flag](https://res.cloudinary.com/coinection/image/upload/v1582141076/images/flags/netherlands_m3zemp.png)

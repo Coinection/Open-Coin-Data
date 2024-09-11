@@ -1,7 +1,7 @@
----
+--
 type: country
-id: cm0f87xzo000k0cjwc80s997c
----
+id: MC
+--
 
 # Monaco
 
@@ -15,4 +15,3 @@ Monaco is a tiny city-state located on the Mediterranean Sea. On the landward si
 
 ## Images
 
-![Flag](https://res.cloudinary.com/coinection/image/upload/v1582141076/images/flags/monaco_qmvmqq.png)

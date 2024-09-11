@@ -1,7 +1,7 @@
----
+--
 type: country
-id: cm0f87xzo000n0cjw36osa486
----
+id: PT
+--
 
 # Portugal
 
@@ -15,4 +15,3 @@ Portugal is a country in southwestern Europe, bordering the Atlantic Ocean. On t
 
 ## Images
 
-![Flag](https://res.cloudinary.com/coinection/image/upload/v1582141076/images/flags/portugal_qpiudj.png)
