@@ -1,14 +1,14 @@
---
+---
 type: serie
 id: VA-2014
-country id: VA
---
+countryId: VA
+---
 
 # Vatican City 2014 - 2017
 
 ## Metadata
 
-**Startdate:** 2014-01-01
+**Startdate:** 2014-01-01\
 **Enddate:** 2017-01-01
 
 ## Description

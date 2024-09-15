@@ -1,14 +1,14 @@
---
+---
 type: serie
 id: ES-1999
-country id: ES
---
+countryId: ES
+---
 
 # Spain 1999 - 2010
 
 ## Metadata
 
-**Startdate:** 1999-01-01
+**Startdate:** 1999-01-01\
 **Enddate:** 2015-01-01
 
 ## Description

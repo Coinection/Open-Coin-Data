@@ -1,7 +1,7 @@
---
+---
 type: country
 id: EE
---
+---
 
 # Estonia
 

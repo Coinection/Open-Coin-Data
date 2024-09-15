@@ -1,7 +1,7 @@
---
+---
 type: country
 id: AT
---
+---
 
 # Austria
 

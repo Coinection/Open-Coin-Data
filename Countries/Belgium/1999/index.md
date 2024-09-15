@@ -1,14 +1,14 @@
---
+---
 type: serie
 id: BE-1999
-country id: BE
---
+countryId: BE
+---
 
 # Belgium 2002 - 2014
 
 ## Metadata
 
-**Startdate:** 1999-01-01
+**Startdate:** 1999-01-01\
 **Enddate:** 2014-01-01
 
 ## Description

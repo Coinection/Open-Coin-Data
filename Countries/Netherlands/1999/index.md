@@ -1,14 +1,14 @@
---
+---
 type: serie
 id: NL-1999
-country id: NL
---
+countryId: NL
+---
 
 # Netherlands 1999 - 2014
 
 ## Metadata
 
-**Startdate:** 1999-01-01
+**Startdate:** 1999-01-01\
 **Enddate:** 2014-01-01
 
 ## Description

@@ -1,14 +1,14 @@
---
+---
 type: serie
 id: SM-2002
-country id: SM
---
+countryId: SM
+---
 
 # San Marino 2002 - 2017
 
 ## Metadata
 
-**Startdate:** 2002-01-01
+**Startdate:** 2002-01-01\
 **Enddate:** 2017-01-01
 
 ## Description

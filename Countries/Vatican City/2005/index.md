@@ -1,14 +1,14 @@
---
+---
 type: serie
 id: VA-2005
-country id: VA
---
+countryId: VA
+---
 
 # Vatican City 2005
 
 ## Metadata
 
-**Startdate:** 2005-01-01
+**Startdate:** 2005-01-01\
 **Enddate:** 2006-01-01
 
 ## Description
