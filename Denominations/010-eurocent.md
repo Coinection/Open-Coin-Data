@@ -1,10 +1,11 @@
 ---
 type: denomination
-id: cm0e8w6pg000308l629j70pzr
 ---
 
 # 10 eurocent
 
+**Currency:** Euro\
+**Value:** 0.10\
 **Composition:** Nordic gold\
 **Diameter:**: 19.75 mm\
 **Thickness:**: 1.93 mm\

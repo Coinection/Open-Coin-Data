@@ -1,10 +1,11 @@
 ---
 type: denomination
-id: cm0bgrhlb0005sgbdxgbmfrhv
 ---
 
 # 20 eurocent
 
+**Currency:** Euro\
+**Value:** 0.20\
 **Composition:** Nordic gold\
 **Diameter:**: 22.25 mm\
 **Thickness:**: 2.14 mm\
