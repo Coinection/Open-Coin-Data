@@ -1,5 +1,6 @@
 ---
 type: serie
+serieType: commemorative
 id: Treaty of Rome
 ---
 

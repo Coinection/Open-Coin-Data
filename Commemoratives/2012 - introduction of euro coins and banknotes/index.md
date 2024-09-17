@@ -1,5 +1,6 @@
 ---
 type: serie
+serieType: commemorative
 id: introduction of euro coins and banknotes
 ---
 
