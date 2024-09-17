@@ -2,6 +2,7 @@
 type: serie
 serieType: commemorative
 id: German federal states
+countryId: DE
 ---
 
 # German federal states

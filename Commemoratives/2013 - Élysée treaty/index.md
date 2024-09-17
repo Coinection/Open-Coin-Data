@@ -2,6 +2,7 @@
 type: serie
 serieType: commemorative
 id: Élysée treaty
+countryId: DE
 ---
 
 # Élysée treaty

@@ -2,6 +2,7 @@
 type: serie
 serieType: commemorative
 id: introduction of euro coins and banknotes
+countryId: AT
 ---
 
 # introduction of euro coins and banknotes
