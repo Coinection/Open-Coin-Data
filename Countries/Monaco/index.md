@@ -15,3 +15,4 @@ Monaco is a tiny city-state located on the Mediterranean Sea. On the landward si
 
 ## Images
 
+<img src="Countries/Monaco/mc.png" height="150" alt="Monaco">

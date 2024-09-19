@@ -15,3 +15,4 @@ San Marino is a state on the Apennine Peninsula. The country is surrounded by It
 
 ## Images
 
+<img src="Countries/San Marino/sm.png" height="150" alt="San Marino">

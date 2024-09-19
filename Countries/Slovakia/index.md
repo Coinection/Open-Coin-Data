@@ -15,3 +15,4 @@ Slovakia is a republic in central Europe. The country has a predominantly mounta
 
 ## Images
 
+<img src="Countries/Slovakia/sk.png" height="150" alt="Slovakia">

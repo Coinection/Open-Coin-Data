@@ -15,3 +15,4 @@ The Netherlands is a country in northwestern Europe, bordering Germany and Belgi
 
 ## Images
 
+<img src="Countries/Netherlands/nl.png" height="150" alt="Netherlands">

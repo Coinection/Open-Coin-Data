@@ -15,3 +15,4 @@ Cyprus is a country located on the island of Cyprus in the eastern Mediterranean
 
 ## Images
 
+<img src="Countries/Cyprus/cy.png" height="150" alt="Cyprus">
