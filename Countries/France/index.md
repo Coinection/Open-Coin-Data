@@ -15,4 +15,4 @@ France is a republic in western Europe. The country is located on the North Sea.
 
 ## Images
 
-<img src="Countries/France/fr.png" height="150" alt="France">
+<img src="fr.png" height="150" alt="France">

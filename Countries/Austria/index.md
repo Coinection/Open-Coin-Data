@@ -15,4 +15,4 @@ Austria is a country in central Europa. The country is in the alps. Austria pays
 
 ## Images
 
-<img src="Countries/Austria/at.png" height="150" alt="Austria">
+<img src="at.png" height="150" alt="Austria">

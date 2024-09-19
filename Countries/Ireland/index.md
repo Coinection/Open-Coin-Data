@@ -15,4 +15,4 @@ Ireland is a country on the island of the same name. The Atlantic Ocean lies to 
 
 ## Images
 
-<img src="Countries/Ireland/ie.png" height="150" alt="Ireland">
+<img src="ie.png" height="150" alt="Ireland">

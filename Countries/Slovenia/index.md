@@ -15,4 +15,4 @@ Slovenia is a country in central Europe on the southern edge of the Alps. The co
 
 ## Images
 
-<img src="Countries/Slovenia/si.png" height="150" alt="Slovenia">
+<img src="si.png" height="150" alt="Slovenia">

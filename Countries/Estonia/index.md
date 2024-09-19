@@ -15,4 +15,4 @@ Estonia is the northernmost of the three Baltic states bordering the Gulf of Fin
 
 ## Images
 
-<img src="Countries/Estonia/ee.png" height="150" alt="Estonia">
+<img src="ee.png" height="150" alt="Estonia">

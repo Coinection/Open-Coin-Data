@@ -15,4 +15,4 @@ Malta is a small country located in the Mediterranean Sea. The country consists 
 
 ## Images
 
-<img src="Countries/Malta/mt.png" height="150" alt="Malta">
+<img src="mt.png" height="150" alt="Malta">
