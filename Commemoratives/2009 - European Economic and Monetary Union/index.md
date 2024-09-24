@@ -1,7 +1,7 @@
 ---
 type: serie
 serieType: commemorative
-id: European Economic and Monetary Union
+id: EEMU-2009
 countryId: AT
 ---
 

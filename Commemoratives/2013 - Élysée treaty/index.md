@@ -1,7 +1,7 @@
 ---
 type: serie
 serieType: commemorative
-id: Élysée treaty
+id: ELY-2013
 countryId: DE
 ---
 
