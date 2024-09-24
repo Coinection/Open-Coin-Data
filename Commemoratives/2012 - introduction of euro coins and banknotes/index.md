@@ -1,11 +1,11 @@
 ---
 type: serie
 serieType: commemorative
-id: introduction of euro coins and banknotes
+id: IECB-2012
 countryId: AT
 ---
 
-# introduction of euro coins and banknotes
+# Introduction of euro coins and banknotes
 
 ## Metadata
 
