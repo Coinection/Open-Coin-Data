@@ -1,6 +1,6 @@
 ---
 type: country
-id: cm0bgnuuu0001sgbdobe5ld2z
+id: AT
 ---
 
 # Austria
@@ -15,4 +15,4 @@ Austria is a country in central Europa. The country is in the alps. Austria pays
 
 ## Images
 
-![Flag](https://res.cloudinary.com/coinection/image/upload/v1582141075/images/flags/austria_vqyihq.png)
+<img src="at.png" height="150" alt="Austria">

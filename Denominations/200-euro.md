@@ -1,11 +1,12 @@
 ---
 type: denomination
-id: cm0e8yuci000808l66pdo498d
 ---
 
 # 2 euro
 
-**Composition:** Outer part: copper-nickel. Inner part: nickel brass\
+**Currency:** Euro\
+**Value:** 2.00\
+**Composition:** Outer part: copper-nickel; inner part: three layers: nickel brass, nickel, nickel brass\
 **Diameter:**: 25.75 mm\
 **Thickness:**: 2.20 mm\
 **Weight:**: 8.50 g

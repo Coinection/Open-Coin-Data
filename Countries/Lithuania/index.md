@@ -1,6 +1,6 @@
 ---
 type: country
-id: cm0f87xzo000h0cjw42s26yz5
+id: LT
 ---
 
 # Lithuania
@@ -15,4 +15,4 @@ Lithuania is one of the three Baltic states bordering the Baltic Sea. Lithuania 
 
 ## Images
 
-![Flag](https://res.cloudinary.com/coinection/image/upload/v1582141076/images/flags/lithuania_eihcup.png)
+<img src="lt.png" height="150" alt="Lithuania">

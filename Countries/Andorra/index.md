@@ -1,6 +1,6 @@
 ---
 type: country
-id: cm0f8dp820000bf1hwikdzxzv
+id: AD
 ---
 
 # Andorra
@@ -15,4 +15,4 @@ Andorra is a tiny, independent state in southwestern Europe. The country is loca
 
 ## Images
 
-![Flag](https://res.cloudinary.com/coinection/image/upload/v1582141075/images/flags/andorra_dnmyti.png)
+<img src="ad.png" height="150" alt="Andorra">

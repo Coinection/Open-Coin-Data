@@ -1,6 +1,6 @@
 ---
 type: country
-id: cm0f875m7000c0cjw7f1sgjrz
+id: FI
 ---
 
 # Finland
@@ -15,4 +15,4 @@ Finland is one of the Scandinavian countries in the north of Europe. Finland sta
 
 ## Images
 
-![Flag](https://res.cloudinary.com/coinection/image/upload/v1582141075/images/flags/finland_e5w5ig.png)
+<img src="fi.png" height="150" alt="Finland">

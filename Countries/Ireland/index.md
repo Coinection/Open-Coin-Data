@@ -1,6 +1,6 @@
 ---
 type: country
-id: cm0f875m7000f0cjw9iyx1xwd
+id: IE
 ---
 
 # Ireland
@@ -15,4 +15,4 @@ Ireland is a country on the island of the same name. The Atlantic Ocean lies to 
 
 ## Images
 
-![Flag](https://res.cloudinary.com/coinection/image/upload/v1582141076/images/flags/ireland_edi0ht.png)
+<img src="ie.png" height="150" alt="Ireland">

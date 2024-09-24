@@ -1,6 +1,6 @@
 ---
 type: country
-id: cm0f875m7000g0cjw29ykcrxk
+id: IT
 ---
 
 # Italy
@@ -15,4 +15,4 @@ Italy is a country in the south of Europe, bordering the Mediterranean Sea. Ital
 
 ## Images
 
-![Flag](https://res.cloudinary.com/coinection/image/upload/v1582141076/images/flags/italy_kqejsp.png)
+<img src="it.png" height="150" alt="Italy">

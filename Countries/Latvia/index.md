@@ -1,6 +1,6 @@
 ---
 type: country
-id: cm0f87xzo000j0cjwfhha9r7f
+id: LV
 ---
 
 # Latvia
@@ -15,4 +15,4 @@ Latvia is one of the three Baltic states bordering the Baltic Sea. Latvia joined
 
 ## Images
 
-![Flag](https://res.cloudinary.com/coinection/image/upload/v1582141077/images/flags/latvia_ar7o1y.png)
+<img src="lv.png" height="150" alt="Latvia">

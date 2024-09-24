@@ -1,6 +1,6 @@
 ---
 type: country
-id: cm0f875m7000b0cjwcliu97mz
+id: ES
 ---
 
 # Spain
@@ -15,4 +15,4 @@ Spain is a country in southwestern Europe. It is a country with very different c
 
 ## Images
 
-![Flag](https://res.cloudinary.com/coinection/image/upload/v1582141077/images/flags/spain_frs2c5.png)
+<img src="es.png" height="150" alt="Spain">
