@@ -1,7 +1,7 @@
 ---
 type: serie
 serieType: commemorative
-id: German federal states
+id: GFS-2006
 countryId: DE
 ---
 

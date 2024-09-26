@@ -1,7 +1,7 @@
 ---
 type: serie
 serieType: commemorative
-id: European flag
+id: EF-2015
 countryId: AT
 ---
 
