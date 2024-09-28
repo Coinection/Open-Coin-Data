@@ -4,12 +4,12 @@ id: FR-1999
 countryId: FR
 ---
 
-# France 1999 - ...
+# France 1999 - 2022
 
 ## Metadata
 
 **Startdate:** 1999-01-01\
-**Enddate:**
+**Enddate:** 2022-01-01
 
 ## Description
 
