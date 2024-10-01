@@ -15,4 +15,4 @@ Belgium is a kingdom located in western Europe on the North Sea. The country bor
 
 ## Images
 
-<img src="be.png" height="150" alt="Belgium">
+<img src="be.webp" height="150" alt="Belgium">

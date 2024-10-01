@@ -15,4 +15,4 @@ Greece is a country in the southeast of Europe. The country consists largely of 
 
 ## Images
 
-<img src="gr.png" height="150" alt="Greece">
+<img src="gr.webp" height="150" alt="Greece">

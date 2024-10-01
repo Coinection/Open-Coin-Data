@@ -15,4 +15,4 @@ Finland is one of the Scandinavian countries in the north of Europe. Finland sta
 
 ## Images
 
-<img src="fi.png" height="150" alt="Finland">
+<img src="fi.webp" height="150" alt="Finland">

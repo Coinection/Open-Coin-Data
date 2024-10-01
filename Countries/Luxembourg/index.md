@@ -15,4 +15,4 @@ Luxembourg is a small European country located between Germany, Belgium and Fran
 
 ## Images
 
-<img src="lu.png" height="150" alt="Luxembourg">
+<img src="lu.webp" height="150" alt="Luxembourg">
