@@ -23,9 +23,13 @@ jobs:
           path: data-converter
           token: ${{ secrets.ACCESS_TOKEN }}
 
-      - name: Print repository content
+      - name: Print repository content 1
         run: |
-          ls -la /
+          ls -la /home/runner/work/Open-Coin-Data
+
+      - name: Print repository content 2
+        run: |
+          ls -la /home/runner/work/Open-Coin-Data/Open-Coin-Data
 
       - name: Run Data Converter
         run: |
