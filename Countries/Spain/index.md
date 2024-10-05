@@ -15,4 +15,4 @@ Spain is a country in southwestern Europe. It is a country with very different c
 
 ## Images
 
-<img src="es.png" height="150" alt="Spain">
+<img src="es.webp" height="150" alt="Spain">

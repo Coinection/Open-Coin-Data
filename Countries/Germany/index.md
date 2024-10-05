@@ -15,4 +15,4 @@ Germany is a country in central Europe. The country has the largest population o
 
 ## Images
 
-<img src="de.png" height="150" alt="Germany">
+<img src="de.webp" height="150" alt="Germany">

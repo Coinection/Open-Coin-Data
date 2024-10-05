@@ -15,4 +15,4 @@ Andorra is a tiny, independent state in southwestern Europe. The country is loca
 
 ## Images
 
-<img src="ad.png" height="150" alt="Andorra">
+<img src="ad.webp" height="150" alt="Andorra">

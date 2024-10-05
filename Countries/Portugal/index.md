@@ -15,4 +15,4 @@ Portugal is a country in southwestern Europe, bordering the Atlantic Ocean. On t
 
 ## Images
 
-<img src="pt.png" height="150" alt="Portugal">
+<img src="pt.webp" height="150" alt="Portugal">
