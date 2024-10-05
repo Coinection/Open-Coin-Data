@@ -23,6 +23,10 @@ jobs:
           path: data-converter
           token: ${{ secrets.ACCESS_TOKEN }}
 
+      - name: Print repository content
+        run: |
+          ls -la /
+
       - name: Run Data Converter
         run: |
           cd /data-converter
