@@ -1,0 +1,36 @@
+
+name: Update Coinection Seed
+
+on:
+  pull_request:
+    branches: ["main"]
+
+workflow_dispatch:
+
+jobs:
+  update-seed:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Open Coin Data
+        uses: actions/checkout@v4
+        with:
+          repository: coinection/open-coin-data
+          path: "/ocd"
+
+      - name: Checkout Data Converter
+        uses: actions/checkout@v4
+        with:
+          repository: coinection/data-converter
+          path: "/data-converter"
+
+      - name: Run Data Converter
+        run: |
+          cd /data-converter
+          npm install
+          npm run start "./ocd"
+
+      - name: Print folder content
+        run: |
+          ls -la /ocd
+          
+          
