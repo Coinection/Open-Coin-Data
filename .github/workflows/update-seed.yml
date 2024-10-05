@@ -79,6 +79,13 @@ jobs:
         run: |
           cd ./coinection
 
+          if git diff --quiet; then
+            echo "No changes detected in Coinection. Exiting gracefully..."
+            exit 0
+          else
+            echo "Changes detected. Proceeding with commit and push..."
+          fi
+
           git config --global user.email $AUTHOR_EMAIL
           git config --global user.name $AUTHOR_NAME
           
