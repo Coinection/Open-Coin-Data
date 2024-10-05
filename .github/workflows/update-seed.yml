@@ -30,6 +30,10 @@ jobs:
           path: coinection
           token: ${{ secrets.ACCESS_TOKEN }}
 
+      - name: Print contents of Open Coin Data
+        run: |
+          cd ./ocd
+          ls -la
       
       - name: Get current branch name from Open Coin Data
         run: |
@@ -76,7 +80,7 @@ jobs:
           npm install
           npm run start "../ocd" "../coinection/prisma/data"
 
-      - name: Commit and push changes to Coinection repository
+      - name: Commit and push changes to Coinection
         run: |
           cd ./coinection
 
