@@ -21,7 +21,7 @@ jobs:
         with:
           repository: coinection/data-converter
           path: data-converter
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.ACCESS_TOKEN }}
 
       - name: Run Data Converter
         run: |
