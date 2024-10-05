@@ -23,6 +23,36 @@ jobs:
           path: data-converter
           token: ${{ secrets.ACCESS_TOKEN }}
 
+      - name: Checkout Coinection
+        uses: actions/checkout@v4
+        with:
+          repository: coinection/coinection
+          path: coinection
+          token: ${{ secrets.ACCESS_TOKEN }}
+
+      
+      - name: Get current branch name from Open Coin Data
+        run: |
+          cd ./ocd
+          
+          BRANCH_NAME=${GITHUB_REF#refs/heads/}
+          echo "Current branch: $BRANCH_NAME"
+          echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
+  
+      - name: Create or update branch on Coinection
+        run: |
+          cd ./coinection
+          
+          git fetch --all
+
+          if git rev-parse --verify origin/$BRANCH_NAME; then
+            echo "Branch $BRANCH_NAME already exists in Coinection, checking out..."
+            git checkout $BRANCH_NAME
+          else
+            echo "Branch $BRANCH_NAME does not exist in Coinection, creating new branch..."
+            git checkout -b $BRANCH_NAME
+          fi
+
       - name: Run Data Converter
         run: |
           cd ./data-converter
@@ -31,7 +61,4 @@ jobs:
 
       - name: Print repository content 2
         run: |
-          ls -la /home/runner/work/Open-Coin-Data/Open-Coin-Data/data-converter
-
-          
-          
+          ls -la /home/runner/work/Open-Coin-Data/Open-Coin-Data/data-converter/output
