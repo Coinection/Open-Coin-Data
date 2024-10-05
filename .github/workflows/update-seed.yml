@@ -35,7 +35,14 @@ jobs:
         run: |
           cd ./ocd
           
-          BRANCH_NAME=${GITHUB_REF#refs/heads/}
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            # Get the source branch of the PR
+            BRANCH_NAME=${{ github.event.pull_request.head.ref }}
+          else
+            # Get the branch name from the GITHUB_REF (for push events)
+            BRANCH_NAME=${GITHUB_REF#refs/heads/}
+          fi
+
           echo "Current branch: $BRANCH_NAME"
           echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
   
@@ -62,3 +69,11 @@ jobs:
       - name: Print repository content 2
         run: |
           ls -la /home/runner/work/Open-Coin-Data/Open-Coin-Data/data-converter/output
+
+      - name: Commit and push changes to Coinection
+        run: |
+          cd ./coinection
+          
+          git add .
+          git commit -m "Update seed data"
+          git push origin $BRANCH_NAME
