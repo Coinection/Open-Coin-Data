@@ -29,12 +29,7 @@ jobs:
           repository: coinection/coinection
           path: coinection
           token: ${{ secrets.ACCESS_TOKEN }}
-
-      - name: Print contents of Open Coin Data
-        run: |
-          cd ./ocd
-          ls -la
-      
+ 
       - name: Get current branch name from Open Coin Data
         run: |
           cd ./ocd
