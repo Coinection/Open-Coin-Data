@@ -27,7 +27,7 @@ jobs:
         run: |
           cd ./data-converter
           npm install
-          npm run start "./ocd"
+          npm run start "../ocd"
 
       - name: Print repository content 2
         run: |
