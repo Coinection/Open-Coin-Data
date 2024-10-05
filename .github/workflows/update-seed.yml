@@ -46,7 +46,7 @@ jobs:
           echo "Current branch: $BRANCH_NAME"
           echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
 
-      - name: Get the user details from the commit
+      - name: Get the user details from Open Coin Data
         run: |
           cd ./ocd
 
