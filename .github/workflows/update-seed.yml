@@ -14,13 +14,14 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: coinection/open-coin-data
-          path: "/ocd"
+          path: ocd
 
       - name: Checkout Data Converter
         uses: actions/checkout@v4
         with:
           repository: coinection/data-converter
-          path: "/data-converter"
+          path: data-converter
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run Data Converter
         run: |
