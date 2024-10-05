@@ -74,11 +74,7 @@ jobs:
         run: |
           cd ./data-converter
           npm install
-          npm run start "../ocd"
-
-      - name: Print repository content 2
-        run: |
-          ls -la /home/runner/work/Open-Coin-Data/Open-Coin-Data/data-converter/output
+          npm run start "../ocd" "../coinection/prisma/data"
 
       - name: Commit and push changes to Coinection
         run: |
