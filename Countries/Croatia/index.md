@@ -15,4 +15,4 @@ Croatia is a country in Central and Southeast Europe, on the coast of the Adriat
 
 ## Images
 
-<img src="hr.png" height="150" alt="Croatia">
+<img src="hr.webp" height="150" alt="Croatia">

@@ -1,0 +1,94 @@
+
+name: Update Coinection Seed
+
+on:
+  pull_request:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  update-seed:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Open Coin Data
+        uses: actions/checkout@v4
+        with:
+          repository: coinection/open-coin-data
+          path: ocd
+
+      - name: Checkout Data Converter
+        uses: actions/checkout@v4
+        with:
+          repository: coinection/data-converter
+          path: data-converter
+          token: ${{ secrets.ACCESS_TOKEN }}
+
+      - name: Checkout Coinection
+        uses: actions/checkout@v4
+        with:
+          repository: coinection/coinection
+          path: coinection
+          token: ${{ secrets.ACCESS_TOKEN }}
+ 
+      - name: Get current branch name from Open Coin Data
+        run: |
+          cd ./ocd
+          
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            # Get the source branch of the PR
+            BRANCH_NAME=${{ github.event.pull_request.head.ref }}
+          else
+            # Get the branch name from the GITHUB_REF (for push events)
+            BRANCH_NAME=${GITHUB_REF#refs/heads/}
+          fi
+
+          echo "Current branch: $BRANCH_NAME"
+          echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
+
+      - name: Get the user details from Open Coin Data
+        run: |
+          cd ./ocd
+
+          AUTHOR_EMAIL=$(git log -1 --pretty=format:'%ae')
+          AUTHOR_NAME=$(git log -1 --pretty=format:'%an')
+
+          echo "AUTHOR_EMAIL=$AUTHOR_EMAIL" >> $GITHUB_ENV
+          echo "AUTHOR_NAME=$AUTHOR_NAME" >> $GITHUB_ENV
+  
+      - name: Create or update branch on Coinection
+        run: |
+          cd ./coinection
+          
+          git fetch --all
+
+          if git rev-parse --verify origin/$BRANCH_NAME; then
+            echo "Branch $BRANCH_NAME already exists in Coinection, checking out..."
+            git checkout $BRANCH_NAME
+          else
+            echo "Branch $BRANCH_NAME does not exist in Coinection, creating new branch..."
+            git checkout -b $BRANCH_NAME
+          fi
+
+      - name: Run Data Converter
+        run: |
+          cd ./data-converter
+          npm install
+          npm run start "../ocd" "../coinection/prisma/data/"
+
+      - name: Commit and push changes to Coinection
+        run: |
+          cd ./coinection
+
+          if git diff --quiet; then
+            echo "No changes detected in Coinection. Exiting gracefully..."
+            exit 0
+          else
+            echo "Changes detected. Proceeding with commit and push..."
+          fi
+
+          git config --global user.email $AUTHOR_EMAIL
+          git config --global user.name $AUTHOR_NAME
+          
+          git add .
+          git commit -m "Update seed data"
+          git push origin $BRANCH_NAME

@@ -15,4 +15,4 @@ Latvia is one of the three Baltic states bordering the Baltic Sea. Latvia joined
 
 ## Images
 
-<img src="lv.png" height="150" alt="Latvia">
+<img src="lv.webp" height="150" alt="Latvia">
