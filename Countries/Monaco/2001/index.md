@@ -4,7 +4,7 @@ id: MC-2001
 countryId: MC
 ---
 
-# Monaco 2002 - 2006
+# Monaco 2001 - 2006
 
 ## Metadata
 
@@ -14,4 +14,3 @@ countryId: MC
 ## Description
 
 The Monégasque euro coins have three different designs.
-
