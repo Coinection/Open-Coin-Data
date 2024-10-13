@@ -15,4 +15,4 @@ Lithuania is one of the three Baltic states bordering the Baltic Sea. Lithuania 
 
 ## Images
 
-<img src="lt.png" height="150" alt="Lithuania">
+<img src="lt.webp" height="150" alt="Lithuania">

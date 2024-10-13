@@ -15,4 +15,4 @@ Italy is a country in the south of Europe, bordering the Mediterranean Sea. Ital
 
 ## Images
 
-<img src="it.png" height="150" alt="Italy">
+<img src="it.webp" height="150" alt="Italy">

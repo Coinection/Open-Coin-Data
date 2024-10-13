@@ -15,4 +15,4 @@ Vatican City is the smallest independent state in the world and is enclosed by t
 
 ## Images
 
-<img src="va.png" height="150" alt="Vatican City">
+<img src="va.webp" height="150" alt="Vatican City">
