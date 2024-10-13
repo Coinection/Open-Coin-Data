@@ -2,7 +2,6 @@
 type: serie
 serieType: commemorative
 id: EF-2015
-countryId: AT
 ---
 
 # European flag

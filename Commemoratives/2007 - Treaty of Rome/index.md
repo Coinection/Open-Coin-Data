@@ -2,7 +2,6 @@
 type: serie
 serieType: commemorative
 id: TOR-2007
-countryId: AT
 ---
 
 # Treaty of Rome
