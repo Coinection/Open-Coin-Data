@@ -4,7 +4,7 @@ serieType: commemorative
 id: ELY-2013
 ---
 
-# Élysée treaty
+# Ã‰lysÃ©e treaty
 
 ## Metadata
 
@@ -13,4 +13,4 @@ id: ELY-2013
 
 ## Description
 
-50 years Élysée treaty
+50 years Ã‰lysÃ©e treaty
