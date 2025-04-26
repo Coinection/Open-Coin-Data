@@ -14,4 +14,3 @@ id: ELY-2013
 ## Description
 
 50 years Élysée treaty
-
