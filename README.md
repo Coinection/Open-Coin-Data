@@ -6,6 +6,8 @@ Open Coin Data is a central repository of all Euro coins, containing information
 
 You are free to use this data, as long as you attribute the source. 
 
+[![Github-sponsors](https://img.shields.io/badge/sponsor-30363D?style=for-the-badge&logo=GitHub-Sponsors&logoColor=#EA4AAA)](https://github.com/sponsors/coinection)
+
 -----
 
 [View all countries](./Countries/index.md)
