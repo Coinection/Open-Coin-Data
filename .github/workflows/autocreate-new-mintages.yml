@@ -24,7 +24,16 @@ jobs:
       - name: Create or update branch
         run: |
           cd ./ocd
-          git checkout -b "add-mintages-$NEXT_YEAR"
+          BRANCH_NAME="add-mintages-$NEXT_YEAR"
+          git fetch --all
+
+          if git rev-parse --verify origin/$BRANCH_NAME; then
+            echo "Branch $BRANCH_NAME already exists in Coinection, checking out..."
+            git checkout $BRANCH_NAME
+          else
+            echo "Branch $BRANCH_NAME does not exist in Coinection, creating new branch..."
+            git checkout -b $BRANCH_NAME
+          fi
 
       - name: Run Mintage Update Script
         run: |
