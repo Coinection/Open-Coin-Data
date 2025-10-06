@@ -221,7 +221,7 @@ class MintageUpdater {
     }
 
     /**
-     * Add a single mintage row to a coin file (simple approach)
+     * Add mintage row(s) to a coin file, German coins need 5 rows (A, D, F, G, J)
      */
     private async addMintageRowToCoin(coin: CoinFile): Promise<void> {
         const content = readFileSync(coin.path, "utf-8");
@@ -239,15 +239,27 @@ class MintageUpdater {
             throw new Error(`Could not find mintage table in ${coin.path}`);
         }
 
-        // Create the new 2026 row
-        const newRow = `| ${NEXT_YEAR} |          | 0          | 0                      | 0     |`;
+        // Create new rows - German coins need mint marks A, D, F, G, J
+        let newRows: string;
+        if (coin.countryId === "DE") {
+            // German coins: add 5 rows with different mint marks
+            const germanMintMarks = ["A", "D", "F", "G", "J"];
+            const rows = germanMintMarks.map(mintMark =>
+                `| ${NEXT_YEAR} | ${mintMark}        | 0          | 0                      | 0      |`
+            );
+            newRows = rows.join("\n");
+        }
+        else {
+            // Other countries: single row with empty mint mark
+            newRows = `| ${NEXT_YEAR} |          | 0          | 0                      | 0     |`;
+        }
 
-        // Insert the new row right after the last table row with proper newline handling
+        // Insert the new row(s) right after the last table row with proper newline handling
         const lastRowEnd = lastMatch.index + lastMatch[0].length;
         const afterLastRow = content.slice(lastRowEnd);
 
-        // Add newline + new row, making sure we don"t create extra blank lines
-        const newContent = content.slice(0, lastRowEnd) + "\n" + newRow + afterLastRow;
+        // Add newline + new row(s), making sure we don"t create extra blank lines
+        const newContent = content.slice(0, lastRowEnd) + "\n" + newRows + afterLastRow;
 
         writeFileSync(coin.path, newContent, "utf-8");
     }
