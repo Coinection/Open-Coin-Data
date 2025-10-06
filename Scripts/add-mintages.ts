@@ -38,14 +38,11 @@ class MintageUpdater {
     async main(): Promise<void> {
         try {
             console.log("🚀 Starting mintage update process...");
-            console.log(`📅 Target year: ${NEXT_YEAR}`);
+            console.log(`📅 Target year: ${NEXT_YEAR}\n`);
 
             await this.discoverActiveSeries();
-            console.log(`🔍 Found ${this.activeSeries.length} active series`);
-
             await this.findCoinFiles();
-            console.log(`🔍 Found ${this.coinFiles.length} coin files in active series`);
-
+             
             const coinsNeedingUpdates = await this.findCoinsNeedingUpdates();
 
             await this.addMintageRows(coinsNeedingUpdates);
@@ -65,7 +62,7 @@ class MintageUpdater {
         const countriesPath = join(this.rootDir, COUNTRIES_DIR);
 
         if (!existsSync(countriesPath)) {
-            console.warn(`Countries directory not found at: ${countriesPath}`);
+            console.warn(`❌ Countries directory not found at: ${countriesPath}`);
             return;
         }
 
@@ -133,7 +130,7 @@ class MintageUpdater {
                 path: filePath
             };
         } catch (error) {
-            console.warn(`Warning: Could not parse serie file ${filePath}:`, error);
+            console.warn(`❌ Warning: Could not parse serie file ${filePath}:`, error);
             return null;
         }
     }
@@ -177,7 +174,7 @@ class MintageUpdater {
             const yearPattern = new RegExp(`^\\|\\s*${year}\\s*\\|`, "m");
             return yearPattern.test(content);
         } catch (error) {
-            console.warn(`Warning: Could not check year in ${filePath}:`, error);
+            console.warn(`❌ Warning: Could not check year in ${filePath}:`, error);
             return false;
         }
     }
@@ -195,7 +192,7 @@ class MintageUpdater {
             }
         }
 
-        console.log(`Found ${coinsNeedingUpdates.length} coins needing ${NEXT_YEAR} updates`);
+        console.log(`🕵️ Found ${coinsNeedingUpdates.length} coins needing ${NEXT_YEAR} updates`);
         return coinsNeedingUpdates;
     }
 
@@ -210,10 +207,9 @@ class MintageUpdater {
                 await this.addMintageRowToCoin(coin);
                 updatedCount++;
                 if (updatedCount <= 5) { // Show first 5 updates
-                    console.log(`✓ Added ${NEXT_YEAR} row to ${coin.countryId} ${coin.denomination}`);
                 }
             } catch (error) {
-                console.error(`✗ Failed to update ${coin.path}:`, error);
+                console.error(`❌ Failed to update ${coin.path}:`, error);
             }
         }
 
@@ -276,7 +272,7 @@ async function main(): Promise<void> {
 // Run the script if this file is executed directly
 if (require.main === module) {
     main().catch(error => {
-        console.error("Fatal error:", error);
+        console.error("❌ Fatal error:", error);
         process.exit(1);
     });
 }

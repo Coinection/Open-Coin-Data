@@ -1,10 +1,9 @@
 {
-  "name": "coin-mintage-updater",
+  "name": "open-coin-data-mintage-updater",
   "version": "1.0.0",
-  "description": "Script to automatically update mintage data for ongoing coin series",
-  "main": "updateMintage.js",
+  "description": "Script to automatically add mintage data for next year for ongoing coin series",
   "scripts": {
-    "update": "ts-node updateMintage.ts"
+    "update": "ts-node add-mintages.ts"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",

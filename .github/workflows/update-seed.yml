@@ -1,5 +1,5 @@
 
-name: Update Coinection Seed
+name: Update Coinection seed
 
 on:
   pull_request:
@@ -8,6 +8,7 @@ on:
 
 jobs:
   update-seed:
+    name: Update Coinection seed
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Open Coin Data
