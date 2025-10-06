@@ -38,7 +38,7 @@ class MintageUpdater {
     async main(): Promise<void> {
         try {
             console.log("🚀 Starting mintage update process...");
-            console.log(`📅 Target year: ${NEXT_YEAR}`);
+            console.log(`📅 Target year: ${NEXT_YEAR}\n`);
 
             await this.discoverActiveSeries();
             await this.findCoinFiles();
