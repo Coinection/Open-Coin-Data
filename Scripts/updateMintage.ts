@@ -62,7 +62,7 @@ class MintageUpdater {
         const countriesPath = join(this.rootDir, COUNTRIES_DIR);
 
         if (!existsSync(countriesPath)) {
-            console.warn(`Countries directory not found at: ${countriesPath}`);
+            console.warn(`🕵️ Countries directory not found at: ${countriesPath}`);
             return;
         }
 
