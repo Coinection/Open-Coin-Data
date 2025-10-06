@@ -2,8 +2,8 @@
 name: Automatically create new mintages
 
 on:
-  pull_request:
-    branches: ["main"]
+  schedule:
+    - cron: '0 0 1 12 *'  # At 00:00 on December 1st every year
   workflow_dispatch:
 
 jobs:
@@ -16,7 +16,7 @@ jobs:
           repository: coinection/open-coin-data
           path: ocd
 
-      - name: Set dynamic variables
+      - name: Set next year variable
         run: |
           echo "NEXT_YEAR=$(($(date +%Y) + 1))" >> $GITHUB_ENV
 
@@ -33,7 +33,7 @@ jobs:
 
       - name: Commit and push changes to Open Coin Data
         run: |
-          cd ./ocd
+          cd ./ocd/Scripts
 
           if git diff --quiet; then
             echo "No changes detected in Open Coin Data. Exiting gracefully..."
