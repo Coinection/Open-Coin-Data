@@ -41,11 +41,8 @@ class MintageUpdater {
             console.log(`📅 Target year: ${NEXT_YEAR}`);
 
             await this.discoverActiveSeries();
-            console.log(`🔍 Found ${this.activeSeries.length} active series`);
-
             await this.findCoinFiles();
-            console.log(`🔍 Found ${this.coinFiles.length} coin files in active series`);
-
+             
             const coinsNeedingUpdates = await this.findCoinsNeedingUpdates();
 
             await this.addMintageRows(coinsNeedingUpdates);
@@ -195,7 +192,7 @@ class MintageUpdater {
             }
         }
 
-        console.log(`Found ${coinsNeedingUpdates.length} coins needing ${NEXT_YEAR} updates`);
+        console.log(`🕵️ Found ${coinsNeedingUpdates.length} coins needing ${NEXT_YEAR} updates`);
         return coinsNeedingUpdates;
     }
 
@@ -210,7 +207,6 @@ class MintageUpdater {
                 await this.addMintageRowToCoin(coin);
                 updatedCount++;
                 if (updatedCount <= 5) { // Show first 5 updates
-                    console.log(`✓ Added ${NEXT_YEAR} row to ${coin.countryId} ${coin.denomination}`);
                 }
             } catch (error) {
                 console.error(`✗ Failed to update ${coin.path}:`, error);
