@@ -20,11 +20,11 @@ jobs:
       - name: Set next year variable
         run: |
           echo "NEXT_YEAR=$(($(date +%Y) + 1))" >> $GITHUB_ENV
+          echo "BRANCH_NAME=add-mintages-$NEXT_YEAR" >> $GITHUB_ENV
 
       - name: Create or update branch
         run: |
           cd ./ocd
-          BRANCH_NAME="add-mintages-$NEXT_YEAR"
           git fetch --all
 
           if git rev-parse --verify origin/$BRANCH_NAME; then
@@ -57,4 +57,4 @@ jobs:
           
           git add .
           git commit -m "Add mintage data for $NEXT_YEAR"
-          git push origin "add-mintages-$NEXT_YEAR"
+          git push origin "$BRANCH_NAME"
