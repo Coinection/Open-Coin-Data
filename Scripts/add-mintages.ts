@@ -62,7 +62,7 @@ class MintageUpdater {
         const countriesPath = join(this.rootDir, COUNTRIES_DIR);
 
         if (!existsSync(countriesPath)) {
-            console.warn(`🕵️ Countries directory not found at: ${countriesPath}`);
+            console.warn(`❌ Countries directory not found at: ${countriesPath}`);
             return;
         }
 
@@ -130,7 +130,7 @@ class MintageUpdater {
                 path: filePath
             };
         } catch (error) {
-            console.warn(`Warning: Could not parse serie file ${filePath}:`, error);
+            console.warn(`❌ Warning: Could not parse serie file ${filePath}:`, error);
             return null;
         }
     }
@@ -174,7 +174,7 @@ class MintageUpdater {
             const yearPattern = new RegExp(`^\\|\\s*${year}\\s*\\|`, "m");
             return yearPattern.test(content);
         } catch (error) {
-            console.warn(`Warning: Could not check year in ${filePath}:`, error);
+            console.warn(`❌ Warning: Could not check year in ${filePath}:`, error);
             return false;
         }
     }
@@ -209,7 +209,7 @@ class MintageUpdater {
                 if (updatedCount <= 5) { // Show first 5 updates
                 }
             } catch (error) {
-                console.error(`✗ Failed to update ${coin.path}:`, error);
+                console.error(`❌ Failed to update ${coin.path}:`, error);
             }
         }
 
@@ -272,7 +272,7 @@ async function main(): Promise<void> {
 // Run the script if this file is executed directly
 if (require.main === module) {
     main().catch(error => {
-        console.error("Fatal error:", error);
+        console.error("❌ Fatal error:", error);
         process.exit(1);
     });
 }
