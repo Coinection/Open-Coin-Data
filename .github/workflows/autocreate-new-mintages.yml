@@ -1,0 +1,50 @@
+
+name: Automatically create new mintages
+
+on:
+  pull_request:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  update-seed:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Open Coin Data
+        uses: actions/checkout@v4
+        with:
+          repository: coinection/open-coin-data
+          path: ocd
+
+      - name: Set dynamic variables
+        run: |
+          echo "NEXT_YEAR=$(($(date +%Y) + 1))" >> $GITHUB_ENV
+
+      - name: Create or update branch on Coinection
+        run: |
+          cd ./ocd
+          git checkout -b "update-mintages-$NEXT_YEAR"
+
+      - name: Run Mintage Update Script
+        run: |
+          cd ./ocd/Scripts
+          npm install
+          npm run update
+
+      - name: Commit and push changes to Open Coin Data
+        run: |
+          cd ./ocd
+
+          if git diff --quiet; then
+            echo "No changes detected in Open Coin Data. Exiting gracefully..."
+            exit 0
+          else
+            echo "Changes detected. Proceeding with commit and push..."
+          fi
+
+          git config --global user.email "bot@coinection.eu"
+          git config --global user.name "Coinection"
+          
+          git add .
+          git commit -m "Update mintage data for $NEXT_YEAR"
+          git push origin "update-mintages-$NEXT_YEAR"
