@@ -19,7 +19,7 @@ jobs:
 
       - name: Set next year variable
         run: |
-          $NEXT_YEAR=$(($(date +%Y) + 1))
+          NEXT_YEAR=$(($(date +%Y) + 1))
           echo "NEXT_YEAR=$NEXT_YEAR" >> $GITHUB_ENV
           echo "BRANCH_NAME=add-mintages-$NEXT_YEAR" >> $GITHUB_ENV
 
