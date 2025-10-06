@@ -1,5 +1,5 @@
 
-name: Automatically create new mintages
+name: Automatically add new mintages
 
 on:
   schedule:
@@ -7,7 +7,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  update-seed:
+  automatically-add-mintages:
+    name: Automatically add new mintages
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Open Coin Data
@@ -20,10 +21,10 @@ jobs:
         run: |
           echo "NEXT_YEAR=$(($(date +%Y) + 1))" >> $GITHUB_ENV
 
-      - name: Create or update branch on Coinection
+      - name: Create or update branch
         run: |
           cd ./ocd
-          git checkout -b "update-mintages-$NEXT_YEAR"
+          git checkout -b "add-mintages-$NEXT_YEAR"
 
       - name: Run Mintage Update Script
         run: |
@@ -33,7 +34,7 @@ jobs:
 
       - name: Commit and push changes to Open Coin Data
         run: |
-          cd ./ocd/Scripts
+          cd ./ocd
 
           if git diff --quiet; then
             echo "No changes detected in Open Coin Data. Exiting gracefully..."
@@ -46,5 +47,5 @@ jobs:
           git config --global user.name "Coinection"
           
           git add .
-          git commit -m "Update mintage data for $NEXT_YEAR"
-          git push origin "update-mintages-$NEXT_YEAR"
+          git commit -m "Add mintage data for $NEXT_YEAR"
+          git push origin "add-mintages-$NEXT_YEAR"
