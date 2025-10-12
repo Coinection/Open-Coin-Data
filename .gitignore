@@ -4,6 +4,3 @@
 
 /.vs
 .DS_Store
-
-/Scripts/dist
-/Scripts/node_modules
