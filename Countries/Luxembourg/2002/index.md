@@ -4,12 +4,12 @@ id: LU-2002
 countryId: LU
 ---
 
-# Luxembourg 2002 - ...
+# Luxembourg 2002 - 2026
 
 ## Metadata
 
 **Startdate:** 2002-01-01\
-**Enddate:**
+**Enddate:** 2026-01-01
 
 ## Description
 
