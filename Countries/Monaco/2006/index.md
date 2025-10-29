@@ -4,12 +4,12 @@ id: MC-2006
 countryId: MC
 ---
 
-# Monaco 2006 - ...
+# Monaco 2006 - 2025
 
 ## Metadata
 
 **Startdate:** 2006-01-01\
-**Enddate:**
+**Enddate:** 2025-01-01
 
 ## Description
 
