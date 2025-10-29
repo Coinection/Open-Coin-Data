@@ -15,4 +15,4 @@ Bulgaria is a country in Central and Southeast Europe, on the coast of the Black
 
 ## Images
 
-<img src="hr.webp" height="150" alt="Croatia">
+<img src="bg.webp" height="150" alt="Croatia">
