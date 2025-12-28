@@ -46,6 +46,21 @@ jobs:
           echo "Current branch: $BRANCH_NAME"
           echo "BRANCH_NAME=$BRANCH_NAME" >> $GITHUB_ENV
 
+      - name: Get the commit SHA from Open Coin Data
+        run: |
+          cd ./ocd
+          
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            # Get the commit SHA of the PR
+            COMMIT_SHA=${{ github.event.pull_request.head.sha }}
+          else
+            # Get the COMMIT_SHA from the GITHUB_SHA (for push events)
+            COMMIT_SHA=${GITHUB_SHA}
+          fi
+
+          echo "Current commit SHA: $COMMIT_SHA"
+          echo "COMMIT_SHA=$COMMIT_SHA" >> $GITHUB_ENV
+
       - name: Get the user details from Open Coin Data
         run: |
           cd ./ocd
@@ -74,7 +89,7 @@ jobs:
         run: |
           cd ./data-converter
           npm install
-          npm run start "../ocd" "../coinection/prisma/data/" "${{ github.sha }}"
+          npm run start "../ocd" "../coinection/prisma/data/" "${COMMIT_SHA}"
 
       - name: Commit and push changes to Coinection
         run: |
