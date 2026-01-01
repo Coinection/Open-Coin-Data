@@ -4,12 +4,12 @@ id: FR-2022
 countryId: FR
 ---
 
-# France 2022 - 2024
+# France 2022 - ...
 
 ## Metadata
 
 **Startdate:** 2022-01-01\
-**Enddate:** 2024-01-01
+**Enddate:** 
 
 ## Description
 
