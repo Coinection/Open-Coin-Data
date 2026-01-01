@@ -4,7 +4,7 @@ id: FR-1999
 countryId: FR
 ---
 
-# France 1999 - ~2022
+# France 1999 - 2022
 
 ## Metadata
 

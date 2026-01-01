@@ -4,7 +4,7 @@ id: FR-2022
 countryId: FR
 ---
 
-# France ~2022 - ...
+# France 2022 - ...
 
 ## Metadata
 
