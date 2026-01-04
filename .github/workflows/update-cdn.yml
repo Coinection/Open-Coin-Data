@@ -1,0 +1,54 @@
+name: Update Open Coin Data CDN
+
+on:
+  pull_request:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  update-seed:
+    name: Update Open Coin Data CDN
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Open Coin Data
+        uses: actions/checkout@v4
+        with:
+          repository: coinection/open-coin-data
+          path: ocd
+          fetch-depth: 0
+
+      - name: Checkout Coinection Scripts
+        uses: actions/checkout@v4
+        with:
+          repository: coinection/coinection-scripts
+          path: scripts
+          token: ${{ secrets.ACCESS_TOKEN }}
+
+      - name: Determine if any images were updated
+        run: |
+          cd ./ocd
+
+          # Get all changed files in the PR and filter for those containing "Images".
+          git fetch origin ${{ github.event.pull_request.base.ref }}
+          git diff --name-only origin/${{ github.event.pull_request.base.ref }}...HEAD | grep "Images" > images.txt || true
+
+          # Remove duplicates and empty lines
+          sort -u images.txt | sed '/^$/d' > images_temp.txt
+          mv images_temp.txt images.txt
+
+          if [ -s images.txt ]; then
+            echo "Image files were updated:"
+            cat images.txt
+          else
+            echo "No image files were updated."
+            exit 0
+          fi
+
+      - name: Run CDN Update Script
+        run: |
+          cd ./scripts
+          npm install
+          npm run update-cdn-images
+        env:
+          AWS_ACCESS_KEY: "${{ secrets.AWS_ACCESS_KEY_ID }}"
+          AWS_SECRET_KEY: "${{ secrets.AWS_SECRET_ACCESS_KEY }}"   
