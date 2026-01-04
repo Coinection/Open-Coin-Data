@@ -43,7 +43,6 @@ jobs:
             echo "No image files were updated."
             exit 0
           fi
-
       - name: Run CDN Update Script
         run: |
           cd ./scripts
