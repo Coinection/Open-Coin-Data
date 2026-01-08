@@ -13,4 +13,4 @@ countryId: VA
 
 ## Description
 
-Following the election of Pope Francis in 2013, Vatican City introduced a new serie of euro coins that feature his portrait on all eight denominations.
+Following the election of Pope Francis in 2013, Vatican City introduced a new series of euro coins that feature his portrait on all eight denominations.
