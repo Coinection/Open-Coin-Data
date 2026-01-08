@@ -13,5 +13,4 @@ countryId: CY
 
 ## Description
 
-The Cypriotic euro coins feature three different designs. Because Cyprus doesn't have a mint of their own, the coins are minted abroad.
-
+The Cypriotic euro coins feature three different designs, all representing Cyprus's cultural heritage: a cruciform idol from 3000 BC, the Kyrenia trading ship from the 4th century BC, and the moufflon wild sheep.
