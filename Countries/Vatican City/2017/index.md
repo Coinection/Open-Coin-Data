@@ -13,5 +13,4 @@ countryId: VA
 
 ## Description
 
-From 2014 onwards the coins featured the latest pope: Pope Francis.
-
+In 2017, the designs were updated to feature the coat of arms of Pope Francis on all eight denominations.
