@@ -25,6 +25,7 @@ jobs:
           token: ${{ secrets.ACCESS_TOKEN }}
 
       - name: Determine if any images were updated
+        id: check-images
         run: |
           cd ./ocd
 
@@ -39,12 +40,14 @@ jobs:
           if [ -s images.txt ]; then
             echo "Image files were updated:"
             cat images.txt
+            echo "has_images=true" >> $GITHUB_OUTPUT
           else
             echo "No image files were updated."
-            exit 0
+            echo "has_images=false" >> $GITHUB_OUTPUT
           fi
 
       - name: Run CDN Update Script
+        if: steps.check-images.outputs.has_images == 'true'
         run: |
           cd ./scripts
           npm install
