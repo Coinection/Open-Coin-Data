@@ -13,4 +13,4 @@ countryId: DE
 
 ## Description
 
-The German coins have three different designs representing Germany's national symbols and unity: the €1 and €2 coins feature the Federal Eagle as Germany's national emblem, the 10, 20 and 50 cent coins depict the Brandenburg Gate as a symbol of German reunification, and the 1, 2 and 5 cent coins show an oak branch representing Germany's natural heritage. 
+The German euro coins feature three different designs representing Germany's national symbols and unity: the €1 and €2 coins depict the Federal Eagle as Germany's national emblem, the 10, 20 and 50 cent coins show the Brandenburg Gate as a symbol of German reunification, and the 1, 2 and 5 cent coins feature an oak branch representing Germany's natural heritage. 

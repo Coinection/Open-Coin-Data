@@ -13,4 +13,4 @@ countryId: LT
 
 ## Description
 
-The Lithuanian coins share the same design for all denominations, featuring the Vytis (a knight on horseback), Lithuania's national symbol from the coat of arms, representing courage and honor.
+The Lithuanian euro coins feature the same design for all denominations: the Vytis (a knight on horseback), Lithuania's national symbol from the coat of arms, representing courage and honor.
