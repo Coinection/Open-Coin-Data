@@ -13,5 +13,5 @@ countryId: IE
 
 ## Description
 
-The Irish coins all have the same design, containing a Celtic harp. The harp first appeared on Irish currency in 1536.
+All Irish euro coins feature the same design: the Celtic harp, a traditional symbol of Ireland that first appeared on Irish currency in 1536.
 
