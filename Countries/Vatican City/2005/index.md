@@ -14,4 +14,3 @@ countryId: VA
 ## Description
 
 Following the death of Pope John Paul II in April 2005, the Vatican issued special coins during the period of Sede vacante depicting the emblem of the Apostolic Chamber.
-

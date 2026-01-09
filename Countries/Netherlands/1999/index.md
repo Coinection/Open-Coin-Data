@@ -13,5 +13,5 @@ countryId: NL
 
 ## Description
 
-The Dutch euro coins contain the image of the head of state. When the Euro was introduced, the Dutch euro coins contained the image of Queen Beatrix.
+All Dutch euro coins feature the same design: a portrait of Queen Beatrix, the reigning monarch when the euro was introduced.
 

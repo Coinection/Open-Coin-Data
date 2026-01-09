@@ -13,5 +13,5 @@ countryId: NL
 
 ## Description
 
-As of 2014, the Dutch euro coins contain the image of King Willem Alexander. The reason for this is the abdication of Queen Beatrix on April 30, 2013, when King Willem Alexander became the successor.
+Following Queen Beatrix's abdication in 2013, all Dutch euro coins feature the same design: a portrait of the new monarch, King Willem-Alexander.
 
