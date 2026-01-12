@@ -45,7 +45,6 @@ jobs:
             echo "No image files were updated."
             echo "has_images=false" >> $GITHUB_OUTPUT
           fi
-
       - name: Run CDN Update Script
         if: steps.check-images.outputs.has_images == 'true'
         run: |
