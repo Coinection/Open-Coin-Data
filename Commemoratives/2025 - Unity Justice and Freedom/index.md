@@ -5,7 +5,7 @@ id: UFS-2023
 countryId: DE
 ---
 
-# Germany - Unity, Justice and Freedom
+# Unity, Justice and Freedom
 
 ## Metadata
 
