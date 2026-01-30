@@ -1,11 +1,11 @@
 ---
 type: serie
 serieType: commemorative
-id: UFS-2023
+id: UFS-2025
 countryId: DE
 ---
 
-# Germany - Unity, Justice and Freedom
+# Unity, Justice and Freedom
 
 ## Metadata
 
