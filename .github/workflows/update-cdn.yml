@@ -31,9 +31,8 @@ jobs:
         run: |
           cd ./ocd
 
-          # Get all changed files in the PR and filter for those containing "Images".
-          git fetch origin ${{ github.event.pull_request.base.ref }}
-          git diff --name-only origin/${{ github.event.pull_request.base.ref }}...HEAD | grep "Images" > images.txt || true
+          # Check if the last commit modified any files in Images folders
+          git diff-tree --name-only -r HEAD^ HEAD | grep "Images" > images.txt || true
 
           # Remove duplicates and empty lines
           sort -u images.txt | sed '/^$/d' > images_temp.txt
