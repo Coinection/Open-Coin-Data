@@ -13,5 +13,4 @@ countryId: IT
 
 ## Description
 
-The Italian euro coins have a unique design for each coin. The theme for the Italian euro coins is the same, namely well-known Italian works of art.
-
+The Italian euro coins each feature unique designs showcasing famous Italian works of art and architecture: the €2 and €1 coins depict Renaissance masters (Dante and da Vinci's Vitruvian Man), the 10, 20 and 50 cent coins feature classical art and sculpture, and the 1, 2 and 5 cent coins showcase iconic Italian monuments.

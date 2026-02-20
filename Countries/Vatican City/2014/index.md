@@ -13,5 +13,4 @@ countryId: VA
 
 ## Description
 
-From 2014 onwards the coins featured the latest pope: Pope Francis.
-
+Following the election of Pope Francis in 2013, Vatican City introduced a new series of euro coins that feature his portrait on all eight denominations.

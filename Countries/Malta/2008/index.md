@@ -13,5 +13,4 @@ countryId: MT
 
 ## Description
 
-The Maltese euro coins feature three different designs. Because Malta doesn't have a mint of their own, the coins are minted abroad.
-
+The Maltese euro coins feature three different designs. The €1 and €2 coins depict the eight-pointed cross of the Sovereign Order of Malta, the 10, 20 and 50 cent coins show Malta's national coat of arms, and the 1, 2 and 5 cent coins feature the Mnajdra temple complex (a prehistoric UNESCO World Heritage site).

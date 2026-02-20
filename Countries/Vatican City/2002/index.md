@@ -13,5 +13,4 @@ countryId: VA
 
 ## Description
 
-The intial series of euro coins of the Vatican City contain the effigy of Pope John Paul II.
-
+Vatican City's euro coins feature the portrait of Pope John Paul II on all eight denominations.

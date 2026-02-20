@@ -13,5 +13,4 @@ countryId: ES
 
 ## Description
 
-In 2015, the portrait on the 1 and 2 euro coins was changed to that of the new King Felipe VI following his father's abdication the previous year.
-
+Following King Juan Carlos I's abdication in 2014, the €1 and €2 coins now feature a portrait of the new monarch, King Felipe VI, while the 1, 2, 5, 10, 20 and 50 cent coins retain their previous designs.

@@ -13,5 +13,4 @@ countryId: LU
 
 ## Description
 
-Luxembourg's euro coin have three designs. All of the designs feature the design of Henri of Luxembourg.
-
+All Luxembourg euro coins feature the same design: a portrait of Grand Duke Henri alongside the coat of arms of Luxembourg, representing the Grand Duchy's monarchy.

@@ -13,5 +13,4 @@ countryId: MC
 
 ## Description
 
-The design of the Monégasque 1 euro and 2 eurocoin changed in 2025 with a new effigy of Prince Albert II.
-
+Starting in 2025, the €1 and €2 coins feature a new effigy of Prince Albert II, while the 1, 2, 5, 10, 20 and 50 cent coins continue to feature the Grimaldi Royal family's coat of arms and monogram.

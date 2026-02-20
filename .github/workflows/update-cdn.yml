@@ -1,8 +1,10 @@
 name: Update Open Coin Data CDN
 
 on:
-  pull_request:
+  push:
     branches: ["main"]
+    paths-ignore:
+      - ".github/**"
   workflow_dispatch:
 
 jobs:
@@ -25,12 +27,12 @@ jobs:
           token: ${{ secrets.ACCESS_TOKEN }}
 
       - name: Determine if any images were updated
+        id: check-images
         run: |
           cd ./ocd
 
-          # Get all changed files in the PR and filter for those containing "Images".
-          git fetch origin ${{ github.event.pull_request.base.ref }}
-          git diff --name-only origin/${{ github.event.pull_request.base.ref }}...HEAD | grep "Images" > images.txt || true
+          # Check if the last commit modified any files in Images folders
+          git diff-tree --name-only -r HEAD^ HEAD | grep "Images" > images.txt || true
 
           # Remove duplicates and empty lines
           sort -u images.txt | sed '/^$/d' > images_temp.txt
@@ -39,12 +41,14 @@ jobs:
           if [ -s images.txt ]; then
             echo "Image files were updated:"
             cat images.txt
+            echo "has_images=true" >> $GITHUB_OUTPUT
           else
             echo "No image files were updated."
-            exit 0
+            echo "has_images=false" >> $GITHUB_OUTPUT
           fi
 
       - name: Run CDN Update Script
+        if: steps.check-images.outputs.has_images == 'true'
         run: |
           cd ./scripts
           npm install

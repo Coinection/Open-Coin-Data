@@ -13,5 +13,4 @@ countryId: ES
 
 ## Description
 
-The Spanish euro coins have three different designs. The design of the 1 and 2 euro cent coins feature the portrait of King Juan Carolos I.
-
+The Spanish euro coins feature three different designs: the €1 and €2 coins depict King Juan Carlos I, the 10, 20 and 50 cent coins feature the portrait of Miguel de Cervantes (author of Don Quixote), and the 1, 2 and 5 cent coins show the Cathedral of Santiago de Compostela (a UNESCO World Heritage site).
