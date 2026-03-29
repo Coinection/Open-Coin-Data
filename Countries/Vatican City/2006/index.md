@@ -13,5 +13,4 @@ countryId: VA
 
 ## Description
 
-From 2006 onwards the coins featured the new pope: Pope Benedict VVI.
-
+Vatican City's euro coins feature the portrait of Pope Benedict XVI on all eight denominations.

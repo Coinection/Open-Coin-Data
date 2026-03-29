@@ -13,5 +13,5 @@ countryId: EE
 
 ## Description
 
-The Estonian coins  all have the same design. Because Estonia doesn't have a mint of their own, the coins are minted abroad.
+The Estonian coins  all have the same design. It features a geographical image of Estonia and the word "Eesti", which means "Estonia".
 

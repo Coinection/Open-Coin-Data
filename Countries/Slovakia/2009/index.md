@@ -13,5 +13,4 @@ countryId: SK
 
 ## Description
 
-The Slovakian euro coins have three different designs. Because Slovakia doesn't have a mint of their own, the coins are minted abroad.
-
+The Slovakian euro coins feature three different designs representing Slovakia's national symbols: the €1 and €2 coins depict the Slovak coat of arms, the 10, 20 and 50 cent coins show Bratislava Castle (Slovakia's capital landmark), and the 1, 2 and 5 cent coins feature Kriváň Mountain in the High Tatras (a national symbol of Slovakia).

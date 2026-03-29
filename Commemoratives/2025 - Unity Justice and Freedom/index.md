@@ -1,0 +1,17 @@
+---
+type: serie
+serieType: commemorative
+id: UFS-2025
+countryId: DE
+---
+
+# Unity, Justice and Freedom
+
+## Metadata
+
+**Startdate:** 2025-01-01\
+**Enddate:**
+
+## Description
+
+Unity, Justice, and Freedom

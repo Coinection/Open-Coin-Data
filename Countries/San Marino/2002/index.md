@@ -13,5 +13,4 @@ countryId: SM
 
 ## Description
 
-The euro coins from San Marino each have an unique design. The designs are surrounded by two imaginary circles.
-
+The San Marinese euro coins each feature unique designs representing the republic's heritage: the €2 and 50 cent coins depict fortress towers, the €1 and 20 cent coins show St. Marinus (the founder), the 5, 10 and 2 cent coins feature religious buildings and saints, and the 1 cent coin displays San Marino's coat of arms.

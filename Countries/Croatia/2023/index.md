@@ -13,4 +13,4 @@ countryId: HR
 
 ## Description
 
-Croatia has chosen four designs for their national sides of the euro coins, all featuring the distinctive Croatian chequerboard pattern in the background. All the coins also depict the 12 stars of the European flag.
+The Croatian euro coins feature four designs representing the country's identity and heritage, all with the distinctive Croatian chequerboard pattern in the background: the €2 coin shows the outline of Croatia's geography, the €1 coin depicts a marten (representing Croatian wildlife), the 10, 20 and 50 cent coins feature inventor Nikola Tesla, and the 1, 2 and 5 cent coins display the HR ligature (representing the Croatian name for Croatia).
