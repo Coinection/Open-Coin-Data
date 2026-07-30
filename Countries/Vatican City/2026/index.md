@@ -14,3 +14,7 @@ countryId: VA
 ## Description
 
 In 2026, the designs were updated to alternate between the papal coat of arms and Pope LEO XIV's portrait, which was unprecedented in Vatican City's history.
+
+### Sources
+
+- [Start date](https://www.cfn.va/en/numismatics/1170-euro-coin-set-bu-2026.html)
