@@ -4,12 +4,12 @@ id: VA-2017
 countryId: VA
 ---
 
-# Vatican City 2017 - ...
+# Vatican City 2017 - 2026
 
 ## Metadata
 
 **Startdate:** 2017-01-01\
-**Enddate:** 
+**Enddate:** 2026-07-31
 
 ## Description
 
