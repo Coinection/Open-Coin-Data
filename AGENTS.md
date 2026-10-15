@@ -2,7 +2,7 @@
 
 ## Coin files
 
-The reference for how a coin file should look is [coin-template.md](./.ocd/templates/coin-template.md).
+The reference for how a coin file should look is [coin-template.txt](./.ocd/templates/coin-template.txt).
 Always check it before creating or updating a coin file.
 
 ## Conventions
