@@ -2,6 +2,7 @@
 type: serie
 serieType: commemorative
 id: MCH-2011
+countryId: MT
 ---
 
 # Maltese Constitutional History
