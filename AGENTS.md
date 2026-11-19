@@ -14,8 +14,9 @@ Always check it before creating or updating a coin file.
 - `Brilliant Uncirculated` stays `0` for products whose quality is only
   "Uncirculated" / "No Circulada" — that is not BU.
 - Sources: only sources from the issuing country itself count (national
-  gazette, central bank, national mint). The ECB and foreign mints are
-  not accepted as sources.
+  gazette, central bank, national mint). The striking mint also counts
+  as a source, even if foreign (e.g. IPZS for Vatican City). The ECB
+  is not accepted as a source.
 - Source labels are exactly `Mintage Circulated`, `Mintage BU`,
   `Mintage Proof`, `Issue Date`, `Designer`, as bullet lines starting
   with `- `.
