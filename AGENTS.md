@@ -20,8 +20,11 @@ Always check it before creating or updating a coin file.
 - Source labels are exactly `Mintage Circulated`, `Mintage BU`,
   `Mintage Proof`, `Issue Date`, `Designer`, as bullet lines starting
   with `- `.
+- Year-specific sources go under a `#### [year]` subheading (e.g. `#### 2003`).
+- One source for a column: the whole label is the link:
+  `- [Mintage Circulated](url1)`
 - Multiple sources for one column go on a single line:
-  `- Mintages Proof [1](url1), [2](url2)`
+  `- Mintage Circulated [1](url1), [2](url2)`
 - Label sources by table column only (`BU`, `Proof`). No product-type
   qualifiers such as "in year set": a year-set source for a BU coin is
   just `BU`, and for a Proof coin just `Proof`.
